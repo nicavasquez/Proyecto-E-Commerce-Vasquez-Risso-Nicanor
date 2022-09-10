@@ -1,12 +1,12 @@
 
-let nombre = ""
+let nombre = prompt("Buenas tardes, por favor ingrese su nombre: ");
 const carrito = [];
 
 // Bienvenida - funciones solicitarNombre y saludar
 solicitarNombre(nombre);
 
 function solicitarNombre(nombre) {
-    nombre = prompt("Buenas tardes, por favor ingrese su nombre: ");
+    
     saludar(nombre);
 }
 
@@ -102,7 +102,7 @@ function agregarProducto() {
             break;
         case "2":
             console.log("Has seleccionado No");        
-            // console.log(carrito)
+            
             break;
             
         default:
@@ -124,14 +124,39 @@ function cantidad() {
 // funcion para calculo del monto total a pagar, a partir de la lista creada de productos.
 let montoApagar = 0
 function montoTotal (){
-    // console.log(carrito);
+    
     for (let index = 0; index < carrito.length; index=index+2) {
         const element = carrito[index];
         let resultado = element.precio * carrito[index+1];
         montoApagar = montoApagar + resultado;    
     }
-console.log(`El monto a pagar es ${montoApagar}`);    
+console.log(`El monto a pagar es ${montoApagar}`);
+MONTO = `El monto a pagar es $${montoApagar}`;
 }
 montoTotal();
+
+const textoModificado = (document.querySelector("#CARRO p").textContent = `Hola ${nombre}, a continuación puedes ver los productos seleccionados y el monto a pagar: `)
+
+let listaVacia = document.querySelector("#CARRO");
+for (let index = 0; index < carrito.length; index=index+2) {
+    const elem = carrito[index];
+    const cant = carrito[index+1];
+    let resul = `Has agregado a tu carro ${cant} unidades de ${elem.nombre}`;
+    let lista = document.createElement("li");
+    lista.innerHTML = resul;    
+    listaVacia.appendChild(lista);
+}
+
+let agregado = document.querySelector("#CARRO");
+let agreg = document.createElement("p");
+agreg.innerHTML = MONTO;
+agregado.append(agreg)
+
+
+
+
+
+
+
 
 

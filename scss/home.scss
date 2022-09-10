@@ -1,0 +1,36 @@
+main{
+    background-color:rgb(179, 42, 42) ;
+       
+    div{    
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 10px;
+        ul{
+            li{
+                list-style-type: none;
+                text-decoration:none;
+            }
+        }
+       
+        h1{
+            font-style: italic;
+            font-weight: normal;
+            font-size: 1.3rem;
+            font-family: Impact, serif;
+            color: #0f0707;
+        }
+        #Productos{ 
+            display:flex;
+            flex-direction: column; 
+            flex-wrap: wrap;    
+        
+            
+        }
+    }
+    #CARRO{
+        background-color: aqua;
+        
+    }
+}

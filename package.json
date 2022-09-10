@@ -1,11 +1,24 @@
 {
   "name": "4.-ta-entrega---1.er-entrega-proyecto-final",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicavasquez/Proyecto-E-Commerce-Vasquez-Risso-Nicanor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nicavasquez/Proyecto-E-Commerce-Vasquez-Risso-Nicanor/issues"
+  },
+  "homepage": "https://github.com/nicavasquez/Proyecto-E-Commerce-Vasquez-Risso-Nicanor#readme",
+  "description": "",
+  "devDependencies": {
+    "node": "^18.9.0",
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.9"
+  }
 }

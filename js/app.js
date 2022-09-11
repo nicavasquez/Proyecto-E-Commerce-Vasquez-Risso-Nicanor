@@ -43,10 +43,10 @@ seleccionarOpcion();
 function seleccionarOpcion () {
 
     let option = prompt(`Elija una opcion:
-    1: Pizza
-    2: Hamburguesa
-    3: Lomito
-    4: Sand. Milanesa
+    1: Pizza - $1200
+    2: Hamburguesa - $800
+    3: Lomito - $1500
+    4: Sand. Milanesa - $900
     5: No quiero nada.`);
     switch (option) {
         case "1":
@@ -143,7 +143,7 @@ let listaVacia = document.querySelector("#CARRO");
 for (let index = 0; index < carrito.length; index=index+2) {
     const elem = carrito[index];
     const cant = carrito[index+1];
-    let resul = `Has agregado a tu carro ${cant} unidades de ${elem.nombre}`;
+    let resul = `Has agregado a tu carro ${cant} unidades de ${elem.nombre} que cuesta $${elem.precio} cada unidad.`;
     let lista = document.createElement("li");
     lista.innerHTML = resul;    
     listaVacia.appendChild(lista);

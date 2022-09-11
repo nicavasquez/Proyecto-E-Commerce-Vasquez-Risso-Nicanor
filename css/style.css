@@ -1,8 +1,8 @@
 body div header {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "logo redes carrito" "nav nav nav";
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "logo redes carrito" ". nav .";
   padding: 10px;
   background-color: rgb(74, 77, 77);
 }

@@ -135,6 +135,8 @@ MONTO = `El monto a pagar es $${montoApagar}`;
 }
 montoTotal();
 
+
+function DOM (){
 const textoModificado = (document.querySelector("#CARRO p").textContent = `Hola ${nombre}, a continuación puedes ver los productos seleccionados y el monto a pagar: `)
 
 let listaVacia = document.querySelector("#CARRO");
@@ -150,9 +152,10 @@ for (let index = 0; index < carrito.length; index=index+2) {
 let agregado = document.querySelector("#CARRO");
 let agreg = document.createElement("p");
 agreg.innerHTML = MONTO;
-agregado.append(agreg)
+agregado.append(agreg);
 
-
+}
+DOM();
 
 
 
